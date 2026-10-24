@@ -1,0 +1,12 @@
+# Shared configuration for EPIMS microservices.
+# Keep credentials and environment-specific values out of Git.
+
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
